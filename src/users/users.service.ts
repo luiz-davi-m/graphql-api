@@ -55,9 +55,6 @@ export class UsersService {
         }
       })
     } catch (error) {
-      console.log('-=-=-=-=-=-=-=');
-      console.log(typeof(id));
-
       throw new NotFoundException(error.meta.cause);
     }
     return user;
